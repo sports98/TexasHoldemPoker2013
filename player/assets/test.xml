@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datas>
+	<!-- 总共的玩家，共9个，flag为1为有玩家，flag为0未没有玩家 -->"src/assets/primary/1010104XZQP4.xml"
+	<!-- 第一个总是有玩家，为庄家，依次为小盲， 大盲…… -->
+	<!-- name 为玩家的名字， money为当局携带筹码数 -->
+	<!-- 花色中 1:黑桃   2:红桃  3:梅花   4：方块 -->
+	<!-- 3 -13 mean 3 -K ,    14 mean A , 16 mean 2  ,19 mean blackjoker,   20 mean redjoker -->
+	<!-- takecardtime:每个玩家出牌说用的时间， 0代表随机（0-10s），其余代表具体固定时间 -->
+	<explainplayer>0</explainplayer>
+	<winplayer>0</winplayer>
+	<takecardtime>3</takecardtime>
+	<persons>
+		<person>
+			<flag>1</flag>
+			<name>庄家</name>
+			<hornorname>指点江山</hornorname>
+			<cards>
+				<card><huase>1</huase><num>5</num></card>
+				<card><huase>4</huase><num>5</num></card>
+			</cards>
+			<money>100</money>
+		</person>
+		<person>
+			<flag>1</flag>
+			<name>小盲</name>
+			<hornorname>妙手书生</hornorname>
+			<cards>
+				<card><huase>0</huase><num>0</num></card>
+				<card><huase>0</huase><num>0</num></card>
+			</cards>
+			<money>100</money>
+		</person>
+		<person>
+			<flag>1</flag>
+			<name>大盲</name>
+			<hornorname>无畏牛刀</hornorname>
+			<cards>
+				<card><huase>0</huase><num>0</num></card>
+				<card><huase>0</huase><num>0</num></card>
+			</cards>
+			<money>100</money>
+		</person>
+		<person>
+			<flag>0</flag>
+			<name>枪口</name>
+			<hornorname>出露锋芒</hornorname>
+			<cards>
+				<card><huase>0</huase><num>0</num></card>
+				<card><huase>0</huase><num>0</num></card>
+			</cards>
+			<money>100</money>
+		</person>
+		<person>
+			<flag>0</flag>
+			<name>前卫1</name>
+			<hornorname>出露锋芒</hornorname>
+			<cards>
+				<card><huase>0</huase><num>0</num></card>
+				<card><huase>0</huase><num>0</num></card>
+			</cards>
+			<money>100</money>
+		</person>
+		<person>
+			<flag>0</flag>
+			<name>前卫2</name>
+			<hornorname>天山名客</hornorname>
+			<cards>
+				<card><huase>0</huase><num>0</num></card>
+				<card><huase>0</huase><num>0</num></card>
+			</cards>
+			<money>100</money>
+		</person>
+		<person>
+			<flag>0</flag>
+			<name>后卫1</name>
+			<hornorname>天山名客</hornorname>
+			<cards>
+				<card><huase>0</huase><num>0</num></card>
+				<card><huase>0</huase><num>0</num></card>
+			</cards>
+			<money>100</money>
+		</person>
+		<person>
+			<flag>0</flag>
+			<name>后卫2</name>
+			<hornorname>无畏牛刀</hornorname>
+			<cards>
+				<card><huase>0</huase><num>0</num></card>
+				<card><huase>0</huase><num>0</num></card>
+			</cards>
+			<money>100</money>
+		</person>
+		<person>
+			<flag>0</flag>
+			<name>庄家右侧</name>
+			<hornorname>贵宾骚客</hornorname>
+			<cards>
+				<card><huase>3</huase><num>1</num></card>
+				<card><huase>2</huase><num>13</num></card>
+			</cards>
+			<money>100</money>
+		</person>
+	</persons>
+	
+	<!-- 总共的操作步骤，有点多，steps中为一轮出牌的操作 -->
+	<!-- step中为当轮中某个玩家的的操作 -->
+	<!-- player为玩家的位置标志，以persons为准，下标从0开始，第一步总会是小盲的操作 -->
+	<!-- 
+		flag: 1:小盲     2:-大盲    3:跟注   4:加注    5:-弃牌   6:看牌
+	 -->
+	 <!-- time为每小步自己的时间， 为0则没有规定， 按总时间takecardtime进行 -->
+	<totalsteps>
+		<!-- stepflag- 0:走step   1：发第一轮三张公共牌   2:发第四张公共牌  3:发最后一张公共牌    4:结束-->
+		<steps id="1">
+			<stepflag>0</stepflag>
+			<step><player>1</player><commentflag>0</commentflag><flag>1</flag><money>1</money><comment>null</comment><time>3</time></step>
+			<step><player>2</player><commentflag>0</commentflag><flag>2</flag><money>2</money><comment>null</comment><time>3</time></step>
+			<step><player>-1</player><commentflag>1</commentflag><flag>-1</flag><money>-1</money><comment>我们拿到一小对 5，先下注 6 看对手如何反应，在做进一步行动。</comment><time>3</time></step>
+			<step><player>0</player><commentflag>0</commentflag><flag>4</flag><money>6</money><comment>null</comment><time>1</time></step>
+			<step><player>1</player><commentflag>0</commentflag><flag>5</flag><money>0</money><comment>null</comment><time>3</time></step>
+			<step><player>2</player><commentflag>0</commentflag><flag>3</flag><money>4</money><comment>null</comment><time>3</time></step>
+			<step><player>-1</player><commentflag>1</commentflag><flag>-1</flag><money>-1</money><comment>大盲玩家只跟不加，说明其手牌并不是很好，这样我们就有机会用强注压他。</comment><time>3</time></step>
+		</steps>
+		<steps id="2">
+			<stepflag>1</stepflag>
+			<card><huase>2</huase><num>4</num></card>
+			<card><huase>4</huase><num>7</num></card>
+			<card><huase>1</huase><num>2</num></card>
+		</steps>
+		<steps id="3">
+			<stepflag>0</stepflag>
+			<step><player>2</player><commentflag>0</commentflag><flag>6</flag><money>0</money><comment>null</comment></step>
+			<step><player>-1</player><commentflag>1</commentflag><flag>-1</flag><money>-1</money><comment>翻牌 红桃4、方块7、黑桃2，大盲玩家翻牌前只跟不加现在又只是观让，可以确定其手上没有对子，可能是一张大牌带一张小牌。虽然一对5很小，但是对手没有强牌，一对5就是相对强牌，下注12。</comment><time>2</time></step>
+			<step><player>0</player><commentflag>0</commentflag><flag>4</flag><money>12</money><comment>null</comment><time>1</time></step>
+			<step><player>2</player><commentflag>0</commentflag><flag>5</flag><money>0</money><comment>null</comment><time>3</time></step>	
+		</steps>
+		<steps id="6">
+			<stepflag>4</stepflag>
+		</steps>
+		<steps id="7">
+			<stepflag>0</stepflag>
+			<step><player>-1</player><commentflag>1</commentflag><flag>-1</flag><money>-1</money><comment>两位玩家都弃牌，我们提前获得胜利</comment><time>2</time></step>
+		</steps>
+	</totalsteps>
+	<classinfo>小窍门：当对手的牌比我们的小，我们的牌就是相对强牌，果断下注我们的强牌。</classinfo>
+</datas>

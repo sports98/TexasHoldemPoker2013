@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<confchild>
+		<name>下注的意义</name>
+		<summary>下注是牌手之间的沟通交流方式。</summary>
+		<url>assets/intermediate/2010101XZYY1.xml</url>
+	</confchild>
+	<confchild>
+		<name>下注筹码判断</name>
+		<summary>通过下注的筹码，可以准确获得对手信息</summary>
+		<url>assets/intermediate/2010102XZCM1.xml</url>
+	</confchild>
+	<confchild>
+		<name>读牌要领一</name>
+		<summary>读牌，从收集牌局和牌桌信息开始。</summary>
+		<url>assets/intermediate/2020101ZPYL1.xml</url>
+	</confchild>
+	<confchild>
+		<name>读牌要领二</name>
+		<summary>读牌，分析对手牌，然后做行动。</summary>
+		<url>assets/intermediate/2020102ZPYL2.xml</url>
+	</confchild>
+	<confchild>
+		<name>逼强牌弃牌5</name>
+		<summary>逼强牌弃牌，是德州扑克下注的第一个目的。</summary>
+		<url>assets/intermediate/MSQP.xml</url>
+	</confchild>
+</root>
